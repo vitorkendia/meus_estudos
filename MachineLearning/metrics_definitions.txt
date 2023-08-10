@@ -1,0 +1,4 @@
+accuracy - evaluate the general success of the model.
+precision - evaluate the positive success of the model.
+recall - evaluate the negative success of the model.
+f1-score - evaluate precision and recall giving the same weight for those metrics.

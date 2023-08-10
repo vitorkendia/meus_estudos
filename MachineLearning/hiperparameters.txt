@@ -1,0 +1,12 @@
+principais hiperparametros de random forest:
+
+n_estimators (Número de árvores na floresta. Um valor maior geralmente melhora o desempenho, mas também aumenta o tempo de treinamento. É um parâmetro crítico e geralmente deve ser ajustado.)
+
+criterion (gini, entropy...)
+
+max_depth (profundidade máxima de cada árvore na floresta. Controla a profundidade máxima das árvores individuais para evitar overfitting.)
+
+min_samples_split (número mínimo de amostras necessárias para dividir um nó interno. Um valor maior ajuda a evitar overfitting.)
+
+min_samples_leaf (O número mínimo de amostras necessárias para ser um nó folha. Também ajuda a evitar overfitting.)
+

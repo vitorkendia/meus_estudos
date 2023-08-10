@@ -1,0 +1,9 @@
+modelos interessantes de se utilizar com soft voting:
+
+Regressão Logística: A regressão logística é um modelo de classificação que produz probabilidades como saída. Essas probabilidades indicam a probabilidade estimada de pertencer a uma determinada classe.
+Random Forest e Gradient Boosting: Alguns modelos de ensemble, como Random Forest e Gradient Boosting, podem produzir pontuações de confiança calculadas com base nas decisões tomadas em várias árvores de decisão.
+Máquinas de Vetores de Suporte (SVM): Dependendo da configuração, os modelos SVM podem produzir distâncias de margem que podem ser usadas como pontuações de confiança.
+Redes Neurais: Muitos tipos de redes neurais, como as redes neurais profundas, podem ser configurados para produzir probabilidades de classe como saída final. A camada de saída com ativação softmax é comumente usada para isso.
+Naïve Bayes: Os classificadores Naïve Bayes, como o Naïve Bayes Gaussiano, podem produzir probabilidades de classe usando a teoria das probabilidades de Bayes.
+k-Nearest Neighbors (k-NN): Dependendo da implementação, os classificadores k-NN podem retornar uma medida de confiança com base na distância para os vizinhos mais próximos.
+

@@ -1,0 +1,15 @@
+MinMaxScaler:
+
+Utilização: É usado quando você deseja redimensionar os valores das features para um intervalo específico, geralmente entre 0 e 1.
+Vantagens: Preserva a estrutura das distribuições dos dados, é sensível a outliers, mantém os valores em um intervalo limitado, é adequado para algoritmos sensíveis à escala (como algoritmos baseados em distância).
+Quando usar: Quando a distribuição dos dados não é normal ou quando você deseja que todos os valores fiquem dentro de um intervalo específico.
+RobustScaler:
+
+Utilização: É útil quando você tem dados com outliers e deseja padronizar os valores, mas de maneira robusta, ou seja, menos influenciada pelos outliers.
+Vantagens: Lida bem com outliers, escalando os dados de maneira que eles sejam menos afetados.
+Quando usar: Quando os seus dados contêm outliers e você deseja padronizar as features sem ser excessivamente influenciado por eles.
+StandardScaler:
+
+Utilização: É comumente usado quando você deseja padronizar as features removendo a média e escalonando para ter desvio padrão unitário.
+Vantagens: Torna os dados apropriados para algoritmos que assumem uma distribuição normal, como regressão linear, redes neurais, etc. É menos sensível a outliers do que o MinMaxScaler.
+Quando usar: Quando você assume que suas features seguem uma distribuição normal e deseja que elas tenham média zero e desvio padrão um.

@@ -1,0 +1,18 @@
+Correlacoes
+
+Correlação de Pearson:
+É calculada como a covariância entre as variáveis dividida pelo produto de seus desvios padrão.
+Sensivel a outliers, utilizada em relacoes lineares com dados normalizados
+[1,-1]
+
+Correlação de Spearman (Rho de Spearman):
+É baseada nas diferenças entre as classificações dos valores das variáveis.
+[1,-1]
+Menos sensivel a outliers, e nao assume normalidade ou linearidade nos dados
+
+Correlação de Kendall (Tau de Kendall):
+É calculada contando os pares de observações que concordam ou discordam na ordem entre as duas variáveis.
+A correlação de Kendall mede a associação ordinal entre duas variáveis, ou seja, a concordância entre a ordem dos valores entre as variáveis.
+
+
+''Kendall e Spearman são usadas para medir a associação ordinal entre variáveis
