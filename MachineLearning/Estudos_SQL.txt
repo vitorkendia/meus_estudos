@@ -1,0 +1,61 @@
+SELECT *
+FROM customer
+LIMIT 10
+
+SELECT DISTINCT
+	rating
+	,CASE WHEN rating='R'THEN 'Adulto'
+		  WHEN rating='G' THEN 'Idoso'
+		  WHEN rating='PG' THEN 'Crianca'
+		  WHEN rating='NC-17' THEN 'Adolescente'
+		  WHEN rating='PG-13' THEN 'Outro' 
+	END AS Classificacao
+FROM film
+
+
+SELECT *
+FROM film
+WHERE rating='R'
+
+SELECT title
+	   ,description
+	   ,rating
+FROM film
+WHERE rating IN ('R','PG','PG-13')
+ORDER BY rating
+
+
+
+SELECT *
+FROM film
+GROUP BY rental_duration, rental_rate, film_id
+ORDER BY rental_duration
+
+
+
+SELECT 
+	customer_id
+	,COUNT (*) AS QuantidadeAlugueis
+FROM payment
+GROUP BY customer_id
+ORDER BY QuantidadeAlugueis DESC
+
+
+SELECT *
+FROM RENTAL
+WHERE return_date BETWEEN '2005-05-01' AND '2005-06-01'
+GROUP BY staff_id, rental_id
+ORDER BY return_date
+LIMIT 10
+
+
+SELECT customer_id, SUM(amount) as Lucro
+FROM payment
+GROUP BY customer_id
+ORDER BY Lucro
+
+
+SELECT customer_id, COUNT(amount) AS Compras
+FROM payment
+GROUP BY customer_id
+ORDER BY Compras DESC
